@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Worldbook</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%#= number_to_human(@country.size) %>
+
+<%= yield %>
+<nav>
+  <ul>
+    <li><%= link_to('Country', countries_path) %></li>
+     <li><%= link_to('New Country', new_country_path) %></li>
+  </ul>
+</nav>
+
+</body>
+</html>

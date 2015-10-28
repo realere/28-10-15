@@ -1,0 +1,11 @@
+<% @countries.each do |country| %>
+  <p><%= country.name %> currency is <%= country.currency %></p>
+  <%= link_to('Edit', edit_country_path(country)) %>
+  <%= button_to('Delete', country_path(country),method: :delete,data:{confirm: 'Delete them? Do you want to delete this?'}) %>
+  <%= link_to("show #{country.name}", country_path(country)) %>
+  <br>
+  <!-- <p>Enter a search term below</p>
+  <%= text_field_tag :options %>
+  <%=submit_tag "search!" %> -->
+<% end %> 
+

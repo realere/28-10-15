@@ -1,0 +1,30 @@
+<%= form_for @country do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :image %>
+  <%= f.text_field :image%>
+  <br>
+  <%= f.label :flag %>
+  <%= f.text_field :flag %>
+  <br>
+  <%= f.label :size %>
+  <%= f.number_field :size %>
+  <br>
+  <%= f.label :population %>
+  <%= f.number_field :population %>
+  <br>
+  <%= f.label :currency %>
+  <%= f.text_field :currency %>
+  <br>
+  <%= f.label :language %>
+  <%= f.text_field :language %>
+  <br>
+  <%= f.label :capital %>
+  <%= f.text_field :capital %>
+  <br>
+  <%= f.label :president %>
+  <%= f.text_field :president %>
+  <br>
+  <%= f.submit 'Edit' %>
+<% end %>

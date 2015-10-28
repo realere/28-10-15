@@ -1,0 +1,9 @@
+<h1>Welcome the world book </h1>
+
+
+<%= form_tag(search_path, method: :get) do %>
+  <p>Enter a search term below</p>
+  <%= text_field_tag :options %>
+  <%=submit_tag "go!" %>
+
+<% end %>
